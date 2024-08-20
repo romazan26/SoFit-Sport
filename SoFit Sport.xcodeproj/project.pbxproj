@@ -13,6 +13,8 @@
 		30C928532C75153800FF5871 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 30C928522C75153800FF5871 /* Base */; };
 		30C928552C75153900FF5871 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30C928542C75153900FF5871 /* Assets.xcassets */; };
 		30C928582C75153900FF5871 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 30C928572C75153900FF5871 /* Base */; };
+		30C928622C75156400FF5871 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C928612C75156400FF5871 /* MainView.swift */; };
+		30C928652C75177400FF5871 /* ProgressCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C928642C75177300FF5871 /* ProgressCircleView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		30C928542C75153900FF5871 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		30C928572C75153900FF5871 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		30C928592C75153900FF5871 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		30C928612C75156400FF5871 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		30C928642C75177300FF5871 /* ProgressCircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressCircleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,8 @@
 		30C9284A2C75153700FF5871 /* SoFit Sport */ = {
 			isa = PBXGroup;
 			children = (
+				30C928632C75175200FF5871 /* Helpers */,
+				30C9285F2C75155200FF5871 /* Views */,
 				30C9284B2C75153700FF5871 /* AppDelegate.swift */,
 				30C9284D2C75153700FF5871 /* SceneDelegate.swift */,
 				30C9284F2C75153700FF5871 /* ViewController.swift */,
@@ -65,6 +71,30 @@
 				30C928592C75153900FF5871 /* Info.plist */,
 			);
 			path = "SoFit Sport";
+			sourceTree = "<group>";
+		};
+		30C9285F2C75155200FF5871 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				30C928602C75155900FF5871 /* Main */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		30C928602C75155900FF5871 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				30C928612C75156400FF5871 /* MainView.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		30C928632C75175200FF5871 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				30C928642C75177300FF5871 /* ProgressCircleView.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +169,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				30C928502C75153700FF5871 /* ViewController.swift in Sources */,
+				30C928652C75177400FF5871 /* ProgressCircleView.swift in Sources */,
+				30C928622C75156400FF5871 /* MainView.swift in Sources */,
 				30C9284C2C75153700FF5871 /* AppDelegate.swift in Sources */,
 				30C9284E2C75153700FF5871 /* SceneDelegate.swift in Sources */,
 			);
@@ -297,8 +329,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -306,9 +338,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "home.SoFit-Sport";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -324,8 +360,8 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -333,9 +369,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "home.SoFit-Sport";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
