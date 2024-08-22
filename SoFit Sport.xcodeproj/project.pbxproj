@@ -15,6 +15,19 @@
 		30C928582C75153900FF5871 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 30C928572C75153900FF5871 /* Base */; };
 		30C928622C75156400FF5871 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C928612C75156400FF5871 /* MainView.swift */; };
 		30C928652C75177400FF5871 /* ProgressCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C928642C75177300FF5871 /* ProgressCircleView.swift */; };
+		30EBABE42C7790A800FA5BD7 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30EBABE32C7790A800FA5BD7 /* MainViewModel.swift */; };
+		30EBABE62C779DB300FA5BD7 /* BlueButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30EBABE52C779DB300FA5BD7 /* BlueButtonView.swift */; };
+		30EBABE92C779E8500FA5BD7 /* TrainingsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30EBABE82C779E8500FA5BD7 /* TrainingsCell.swift */; };
+		30EBABED2C77A40C00FA5BD7 /* SoFit.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 30EBABEB2C77A40C00FA5BD7 /* SoFit.xcdatamodeld */; };
+		30EBABEF2C77A59800FA5BD7 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30EBABEE2C77A59800FA5BD7 /* CoreDataManager.swift */; };
+		30EBABF12C77AA2800FA5BD7 /* WorkoutsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30EBABF02C77AA2800FA5BD7 /* WorkoutsViewModel.swift */; };
+		30EBABF42C77AE7800FA5BD7 /* WorkoutsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30EBABF32C77AE7800FA5BD7 /* WorkoutsView.swift */; };
+		30EBABF62C77B15900FA5BD7 /* AddworkoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30EBABF52C77B15900FA5BD7 /* AddworkoutView.swift */; };
+		30EBABF82C77B30900FA5BD7 /* WorkoutCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30EBABF72C77B30900FA5BD7 /* WorkoutCellView.swift */; };
+		30EBABFA2C77BC1800FA5BD7 /* TextFieldCustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30EBABF92C77BC1800FA5BD7 /* TextFieldCustomView.swift */; };
+		30EBABFC2C77C2DE00FA5BD7 /* TrainingForWorkoutCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30EBABFB2C77C2DE00FA5BD7 /* TrainingForWorkoutCellView.swift */; };
+		30EBABFE2C77C56600FA5BD7 /* AddNewTrainingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30EBABFD2C77C56600FA5BD7 /* AddNewTrainingView.swift */; };
+		30EBAC002C77C62E00FA5BD7 /* TrainingTextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30EBABFF2C77C62E00FA5BD7 /* TrainingTextFieldView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +41,19 @@
 		30C928592C75153900FF5871 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		30C928612C75156400FF5871 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		30C928642C75177300FF5871 /* ProgressCircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressCircleView.swift; sourceTree = "<group>"; };
+		30EBABE32C7790A800FA5BD7 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
+		30EBABE52C779DB300FA5BD7 /* BlueButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueButtonView.swift; sourceTree = "<group>"; };
+		30EBABE82C779E8500FA5BD7 /* TrainingsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingsCell.swift; sourceTree = "<group>"; };
+		30EBABEC2C77A40C00FA5BD7 /* SoFit.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SoFit.xcdatamodel; sourceTree = "<group>"; };
+		30EBABEE2C77A59800FA5BD7 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		30EBABF02C77AA2800FA5BD7 /* WorkoutsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutsViewModel.swift; sourceTree = "<group>"; };
+		30EBABF32C77AE7800FA5BD7 /* WorkoutsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutsView.swift; sourceTree = "<group>"; };
+		30EBABF52C77B15900FA5BD7 /* AddworkoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddworkoutView.swift; sourceTree = "<group>"; };
+		30EBABF72C77B30900FA5BD7 /* WorkoutCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutCellView.swift; sourceTree = "<group>"; };
+		30EBABF92C77BC1800FA5BD7 /* TextFieldCustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldCustomView.swift; sourceTree = "<group>"; };
+		30EBABFB2C77C2DE00FA5BD7 /* TrainingForWorkoutCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingForWorkoutCellView.swift; sourceTree = "<group>"; };
+		30EBABFD2C77C56600FA5BD7 /* AddNewTrainingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewTrainingView.swift; sourceTree = "<group>"; };
+		30EBABFF2C77C62E00FA5BD7 /* TrainingTextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingTextFieldView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +86,9 @@
 		30C9284A2C75153700FF5871 /* SoFit Sport */ = {
 			isa = PBXGroup;
 			children = (
+				30EBABEA2C77A3D000FA5BD7 /* CoreData */,
+				30EBABE72C779E6400FA5BD7 /* Cells */,
+				30EBABE22C77908E00FA5BD7 /* ViewModels */,
 				30C928632C75175200FF5871 /* Helpers */,
 				30C9285F2C75155200FF5871 /* Views */,
 				30C9284B2C75153700FF5871 /* AppDelegate.swift */,
@@ -76,6 +105,7 @@
 		30C9285F2C75155200FF5871 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				30EBABF22C77AE6200FA5BD7 /* Workouts */,
 				30C928602C75155900FF5871 /* Main */,
 			);
 			path = Views;
@@ -93,8 +123,49 @@
 			isa = PBXGroup;
 			children = (
 				30C928642C75177300FF5871 /* ProgressCircleView.swift */,
+				30EBABE52C779DB300FA5BD7 /* BlueButtonView.swift */,
+				30EBABF92C77BC1800FA5BD7 /* TextFieldCustomView.swift */,
+				30EBABFF2C77C62E00FA5BD7 /* TrainingTextFieldView.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		30EBABE22C77908E00FA5BD7 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				30EBABE32C7790A800FA5BD7 /* MainViewModel.swift */,
+				30EBABF02C77AA2800FA5BD7 /* WorkoutsViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		30EBABE72C779E6400FA5BD7 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				30EBABE82C779E8500FA5BD7 /* TrainingsCell.swift */,
+				30EBABF72C77B30900FA5BD7 /* WorkoutCellView.swift */,
+				30EBABFB2C77C2DE00FA5BD7 /* TrainingForWorkoutCellView.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		30EBABEA2C77A3D000FA5BD7 /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				30EBABEB2C77A40C00FA5BD7 /* SoFit.xcdatamodeld */,
+				30EBABEE2C77A59800FA5BD7 /* CoreDataManager.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		30EBABF22C77AE6200FA5BD7 /* Workouts */ = {
+			isa = PBXGroup;
+			children = (
+				30EBABF32C77AE7800FA5BD7 /* WorkoutsView.swift */,
+				30EBABF52C77B15900FA5BD7 /* AddworkoutView.swift */,
+				30EBABFD2C77C56600FA5BD7 /* AddNewTrainingView.swift */,
+			);
+			path = Workouts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -169,9 +240,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				30C928502C75153700FF5871 /* ViewController.swift in Sources */,
+				30EBABF12C77AA2800FA5BD7 /* WorkoutsViewModel.swift in Sources */,
+				30EBABF42C77AE7800FA5BD7 /* WorkoutsView.swift in Sources */,
 				30C928652C75177400FF5871 /* ProgressCircleView.swift in Sources */,
+				30EBAC002C77C62E00FA5BD7 /* TrainingTextFieldView.swift in Sources */,
+				30EBABFA2C77BC1800FA5BD7 /* TextFieldCustomView.swift in Sources */,
 				30C928622C75156400FF5871 /* MainView.swift in Sources */,
+				30EBABE92C779E8500FA5BD7 /* TrainingsCell.swift in Sources */,
+				30EBABE62C779DB300FA5BD7 /* BlueButtonView.swift in Sources */,
+				30EBABFC2C77C2DE00FA5BD7 /* TrainingForWorkoutCellView.swift in Sources */,
+				30EBABFE2C77C56600FA5BD7 /* AddNewTrainingView.swift in Sources */,
 				30C9284C2C75153700FF5871 /* AppDelegate.swift in Sources */,
+				30EBABF82C77B30900FA5BD7 /* WorkoutCellView.swift in Sources */,
+				30EBABF62C77B15900FA5BD7 /* AddworkoutView.swift in Sources */,
+				30EBABED2C77A40C00FA5BD7 /* SoFit.xcdatamodeld in Sources */,
+				30EBABE42C7790A800FA5BD7 /* MainViewModel.swift in Sources */,
+				30EBABEF2C77A59800FA5BD7 /* CoreDataManager.swift in Sources */,
 				30C9284E2C75153700FF5871 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -401,6 +485,20 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		30EBABEB2C77A40C00FA5BD7 /* SoFit.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				30EBABEC2C77A40C00FA5BD7 /* SoFit.xcdatamodel */,
+			);
+			currentVersion = 30EBABEC2C77A40C00FA5BD7 /* SoFit.xcdatamodel */;
+			name = SoFit.xcdatamodeld;
+			path = "/Users/roman/Downloads/XcodeProgramm/SoFit Sport/SoFit Sport/CoreData/SoFit.xcdatamodeld";
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 30C928402C75153700FF5871 /* Project object */;
 }
