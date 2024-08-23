@@ -39,8 +39,10 @@ struct MainView: View {
                     ZStack {
                         ProgressCircleView(progress: Float(mainVM.timerRemaining))
                         VStack {
-                            Button(action: {mainVM.startTimer()}, label: {
-                                Text(mainVM.isRunning ? "START" : "STOP")
+                            Button(action: {
+                                mainVM.isRunning ? mainVM.stopTimer()  : mainVM.startTimer()
+                            }, label: {
+                                Text(!mainVM.isRunning ? "START" : "STOP")
                                     .foregroundStyle(.white)
                                 .font(.system(size: 42, weight: .heavy))
                             })

@@ -25,13 +25,15 @@ struct AddworkoutView: View {
                             .foregroundStyle(.gray)
                     })
                     
-                    
                     Spacer()
                     
+                    //MARK: - Text field title workout
                     if vm.isNewWorkout || vm.isEditTtle {
                         TextFieldCustomView(placeholder: "New workout", text: $vm.simleWorkOutTitle)
                         
                         Spacer()
+                        
+                        //MARK: - Save button
                         Button(action: {
                             if vm.isNewWorkout {
                                 vm.addWorkout()
@@ -39,6 +41,7 @@ struct AddworkoutView: View {
                             }
                             if vm.isEditTtle {
                                 vm.isEditTtle = false
+                                vm.editWorkout()
                             }
                         }, label: {
                             Image(systemName: "checkmark.gobackward")
@@ -61,36 +64,60 @@ struct AddworkoutView: View {
                 }
                 
                 //MARK: - training list
-                ScrollView{
-                    if let trainings = vm.simpleWorkout.training?.allObjects as? [Training] {
-                        ForEach(trainings) { training in
-                            TrainingForWorkoutCellView(training: training)
+                if !vm.isNewWorkout {
+                    ScrollView{
+                        if let trainings = vm.simpleWorkout.training?.allObjects as? [Training] {
+                            ForEach(trainings) { training in
+                                TrainingForWorkoutCellView(training: training)
+                            }
                         }
+                        //MARK: - One training plus
+                        Button(action: {
+                            if !vm.isNewWorkout{
+                                vm.isPresentAddTraining = true
+                            }
+                            
+                        }, label: {
+                            ZStack {
+                                Color(.main)
+                                    .cornerRadius(6)
+                                    .overlay {
+                                        RoundedRectangle(cornerRadius: 19)
+                                            .stroke(.second, lineWidth: 2.0)
+                                    }
+                                Image(systemName: "plus")
+                                    .resizable()
+                                    .frame(width: 20, height: 20)
+                                    .foregroundStyle(.gray)
+                            }
+                            .frame(width: 358, height: 72)
+                        })
                     }
-                    //MARK: - One training plus
-                    Button(action: {
-                        if !vm.isNewWorkout{
-                            vm.isPresentAddTraining = true
-                        }
-                        
-                    }, label: {
-                                ZStack {
-                                    Color(.main)
-                                        .cornerRadius(6)
-                                        .overlay {
-                                            RoundedRectangle(cornerRadius: 19)
-                                                .stroke(.second, lineWidth: 2.0)
-                                        }
-                                        Image(systemName: "plus")
-                                            .resizable()
-                                            .frame(width: 20, height: 20)
-                                            .foregroundStyle(.gray)
-                                }
-                                .frame(width: 358, height: 72)
-                    })
                 }
                 Spacer()
                 
+                //MARK: - Time workout
+                if vm.isEditTtle || vm.isNewWorkout {
+                    DatePicker("Workout TIme",
+                               selection: $vm.simpleWorkoutTime,
+                               displayedComponents: .hourAndMinute)
+                    .preferredColorScheme(.dark)
+                    .padding()
+                    .background {
+                        Color.second
+                            .cornerRadius(19)
+                    }
+                }
+                if !vm.isNewWorkout{
+                    if let trainings = vm.simpleWorkout.training?.allObjects as? [Training]{
+                        Text("\(trainings.count) ex")
+                            .foregroundStyle(.white)
+                            .font(.system(size: 28,weight: .bold))
+                            .padding(6)
+                            .background {Color.blueApp.cornerRadius(22)}
+                            .padding(.horizontal, 20)
+                    }
+                }
             }.padding()
             if vm.isPresentAddTraining {
                 AddNewTrainingView(vm: vm)

@@ -11,6 +11,8 @@ final class MainViewModel: ObservableObject{
     @Published var timerRemaining = 120
     @Published var isRunning = false
     
+    private var timer: Timer?
+    
     
     
     //MARK: - Timer
@@ -22,15 +24,19 @@ final class MainViewModel: ObservableObject{
     
     func startTimer(){
         isRunning = true
-        timerRemaining = 120
-        Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { [self] timer in
+        timer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { [self] _ in
             if timerRemaining > 0{
                 timerRemaining -= 1
             }else {
-                isRunning = false
-                timer.invalidate()
+                stopTimer()
             }
         }
+    }
+    
+    func stopTimer(){
+        isRunning = false
+        timer?.invalidate()
+        timerRemaining = 120
     }
         
 }

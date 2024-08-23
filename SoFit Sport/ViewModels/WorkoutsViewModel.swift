@@ -18,6 +18,7 @@ final class WorkoutsViewModel: ObservableObject{
     @Published var simpleWorkout: Workouts!
     
     @Published var simleWorkOutTitle = ""
+    @Published var simpleWorkoutTime = Date()
     @Published var simleTrainingDetails = ""
     @Published var simleTrainingExercise = ""
     
@@ -32,11 +33,28 @@ final class WorkoutsViewModel: ObservableObject{
         getWorkOuts()
     }
     
+    //MARK: - Edit data
+    func editWorkout(){
+        let request = NSFetchRequest<Workouts>(entityName: "Workouts")
+        
+        do{
+            workouts = try manager.context.fetch(request)
+            let workout = workouts.first(where: {$0.id == simpleWorkout.id})
+            workout?.time = simpleWorkoutTime
+            workout?.title = simleWorkOutTitle
+        }catch let error{
+            print("Error fetching: \(error.localizedDescription)")
+        }
+        save()
+    }
+    
     //MARK: - Add data
     func addWorkout(){
         let newWorkout = Workouts(context: manager.context)
         newWorkout.title = simleWorkOutTitle
+        newWorkout.time = simpleWorkoutTime
         simpleWorkout = newWorkout
+        
         save()
         
     }
