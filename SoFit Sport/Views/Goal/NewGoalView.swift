@@ -1,14 +1,14 @@
 //
-//  AddNewTrainingView.swift
+//  NewGoalView.swift
 //  SoFit Sport
 //
-//  Created by Роман on 22.08.2024.
+//  Created by Роман on 23.08.2024.
 //
 
 import SwiftUI
 
-struct AddNewTrainingView: View {
-    @StateObject var vm: WorkoutsViewModel
+struct NewGoalView: View {
+    @StateObject var vm: GoalViewModal
     @FocusState private var keyboardIsFocus: Bool
     var body: some View {
         ZStack {
@@ -19,10 +19,10 @@ struct AddNewTrainingView: View {
                     Spacer()
                     //MARK: - Deteils
                     HStack {
-                        Text("Details")
+                        Text("Goal")
                             .foregroundStyle(.gray)
                         Spacer()
-                        TrainingTextFieldView(text: $vm.simleTrainingDetails)
+                        TrainingTextFieldView(text: $vm.simpleTitle)
                             .focused($keyboardIsFocus)
                     }
                     //MARK: - Exercise
@@ -30,28 +30,27 @@ struct AddNewTrainingView: View {
                         Text("Exercise")
                             .foregroundStyle(.gray)
                         Spacer()
-                        TrainingTextFieldView(text: $vm.simleTrainingExercise)
+                        TrainingTextFieldView(text: $vm.simpleExercise)
                             .focused($keyboardIsFocus)
                     }
                     
                     Spacer()
                     
                     Button(action: {
-                        vm.addTrainig()
-                        vm.isPresentAddTraining = false
+                        vm.addGoal()
                     }, label: {
                         BlueButtonView(text: "Create")
                     })
                     
                 }.padding()
             }.frame(height: 200)
-        }
-        .onTapGesture {
-            keyboardIsFocus = false
+                .onTapGesture {
+                    keyboardIsFocus = false
+                }
         }
     }
 }
 
 #Preview {
-    AddNewTrainingView(vm: WorkoutsViewModel())
+    NewGoalView(vm: GoalViewModal())
 }

@@ -9,6 +9,7 @@ import SwiftUI
 
 struct AddworkoutView: View {
     @StateObject var vm: WorkoutsViewModel
+    @FocusState private var keyboardIsFocus: Bool
     var body: some View {
         ZStack {
             //MARK: - Background
@@ -30,6 +31,7 @@ struct AddworkoutView: View {
                     //MARK: - Text field title workout
                     if vm.isNewWorkout || vm.isEditTtle {
                         TextFieldCustomView(placeholder: "New workout", text: $vm.simleWorkOutTitle)
+                            .focused($keyboardIsFocus)
                         
                         Spacer()
                         
@@ -78,19 +80,7 @@ struct AddworkoutView: View {
                             }
                             
                         }, label: {
-                            ZStack {
-                                Color(.main)
-                                    .cornerRadius(6)
-                                    .overlay {
-                                        RoundedRectangle(cornerRadius: 19)
-                                            .stroke(.second, lineWidth: 2.0)
-                                    }
-                                Image(systemName: "plus")
-                                    .resizable()
-                                    .frame(width: 20, height: 20)
-                                    .foregroundStyle(.gray)
-                            }
-                            .frame(width: 358, height: 72)
+                           OneMoreButton()
                         })
                     }
                 }
@@ -122,6 +112,9 @@ struct AddworkoutView: View {
             if vm.isPresentAddTraining {
                 AddNewTrainingView(vm: vm)
             }
+        }
+        .onTapGesture {
+            keyboardIsFocus = false
         }
     }
 }

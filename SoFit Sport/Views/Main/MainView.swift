@@ -10,6 +10,7 @@ import SwiftUI
 struct MainView: View {
     @StateObject var mainVM = MainViewModel()
     @StateObject var workoutVM = WorkoutsViewModel()
+    @StateObject var goalVM = GoalViewModal()
     var body: some View {
         NavigationView {
             ZStack {
@@ -62,11 +63,13 @@ struct MainView: View {
                         } label: {
                             TrainingsCell(title: "Workouts", firstTraining: workoutVM.workouts.first?.title ?? "")
                         }
+                        
                         Spacer()
+                        
                         NavigationLink {
-                            
+                            GoalView(vm: goalVM)
                         } label: {
-                            TrainingsCell(title: "Goals", firstTraining: "JET - NUL")
+                            TrainingsCell(title: "Goals", firstTraining: goalVM.goals.first?.title ?? "")
                         }
                     }
                     .padding(.vertical)

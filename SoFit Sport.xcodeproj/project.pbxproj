@@ -15,6 +15,12 @@
 		30C928582C75153900FF5871 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 30C928572C75153900FF5871 /* Base */; };
 		30C928622C75156400FF5871 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C928612C75156400FF5871 /* MainView.swift */; };
 		30C928652C75177400FF5871 /* ProgressCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C928642C75177300FF5871 /* ProgressCircleView.swift */; };
+		30E1B2012C78FCFC00557A25 /* GoalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30E1B2002C78FCFC00557A25 /* GoalView.swift */; };
+		30E1B2032C78FD1100557A25 /* GoalViewModal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30E1B2022C78FD1100557A25 /* GoalViewModal.swift */; };
+		30E1B2052C7904FD00557A25 /* GoalCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30E1B2042C7904FD00557A25 /* GoalCellView.swift */; };
+		30E1B2072C7906D900557A25 /* OneMoreButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30E1B2062C7906D900557A25 /* OneMoreButton.swift */; };
+		30E1B2092C79089D00557A25 /* NewGoalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30E1B2082C79089D00557A25 /* NewGoalView.swift */; };
+		30E1B20B2C790AC200557A25 /* ComletedGoalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30E1B20A2C790AC200557A25 /* ComletedGoalView.swift */; };
 		30EBABE42C7790A800FA5BD7 /* MainViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30EBABE32C7790A800FA5BD7 /* MainViewModel.swift */; };
 		30EBABE62C779DB300FA5BD7 /* BlueButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30EBABE52C779DB300FA5BD7 /* BlueButtonView.swift */; };
 		30EBABE92C779E8500FA5BD7 /* TrainingsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30EBABE82C779E8500FA5BD7 /* TrainingsCell.swift */; };
@@ -41,6 +47,12 @@
 		30C928592C75153900FF5871 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		30C928612C75156400FF5871 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		30C928642C75177300FF5871 /* ProgressCircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressCircleView.swift; sourceTree = "<group>"; };
+		30E1B2002C78FCFC00557A25 /* GoalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalView.swift; sourceTree = "<group>"; };
+		30E1B2022C78FD1100557A25 /* GoalViewModal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalViewModal.swift; sourceTree = "<group>"; };
+		30E1B2042C7904FD00557A25 /* GoalCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalCellView.swift; sourceTree = "<group>"; };
+		30E1B2062C7906D900557A25 /* OneMoreButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneMoreButton.swift; sourceTree = "<group>"; };
+		30E1B2082C79089D00557A25 /* NewGoalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewGoalView.swift; sourceTree = "<group>"; };
+		30E1B20A2C790AC200557A25 /* ComletedGoalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComletedGoalView.swift; sourceTree = "<group>"; };
 		30EBABE32C7790A800FA5BD7 /* MainViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModel.swift; sourceTree = "<group>"; };
 		30EBABE52C779DB300FA5BD7 /* BlueButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueButtonView.swift; sourceTree = "<group>"; };
 		30EBABE82C779E8500FA5BD7 /* TrainingsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingsCell.swift; sourceTree = "<group>"; };
@@ -105,6 +117,7 @@
 		30C9285F2C75155200FF5871 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				30E1B1FF2C78FCEC00557A25 /* Goal */,
 				30EBABF22C77AE6200FA5BD7 /* Workouts */,
 				30C928602C75155900FF5871 /* Main */,
 			);
@@ -126,8 +139,19 @@
 				30EBABE52C779DB300FA5BD7 /* BlueButtonView.swift */,
 				30EBABF92C77BC1800FA5BD7 /* TextFieldCustomView.swift */,
 				30EBABFF2C77C62E00FA5BD7 /* TrainingTextFieldView.swift */,
+				30E1B2062C7906D900557A25 /* OneMoreButton.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		30E1B1FF2C78FCEC00557A25 /* Goal */ = {
+			isa = PBXGroup;
+			children = (
+				30E1B2002C78FCFC00557A25 /* GoalView.swift */,
+				30E1B2082C79089D00557A25 /* NewGoalView.swift */,
+				30E1B20A2C790AC200557A25 /* ComletedGoalView.swift */,
+			);
+			path = Goal;
 			sourceTree = "<group>";
 		};
 		30EBABE22C77908E00FA5BD7 /* ViewModels */ = {
@@ -135,6 +159,7 @@
 			children = (
 				30EBABE32C7790A800FA5BD7 /* MainViewModel.swift */,
 				30EBABF02C77AA2800FA5BD7 /* WorkoutsViewModel.swift */,
+				30E1B2022C78FD1100557A25 /* GoalViewModal.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -145,6 +170,7 @@
 				30EBABE82C779E8500FA5BD7 /* TrainingsCell.swift */,
 				30EBABF72C77B30900FA5BD7 /* WorkoutCellView.swift */,
 				30EBABFB2C77C2DE00FA5BD7 /* TrainingForWorkoutCellView.swift */,
+				30E1B2042C7904FD00557A25 /* GoalCellView.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -240,6 +266,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				30C928502C75153700FF5871 /* ViewController.swift in Sources */,
+				30E1B2092C79089D00557A25 /* NewGoalView.swift in Sources */,
 				30EBABF12C77AA2800FA5BD7 /* WorkoutsViewModel.swift in Sources */,
 				30EBABF42C77AE7800FA5BD7 /* WorkoutsView.swift in Sources */,
 				30C928652C75177400FF5871 /* ProgressCircleView.swift in Sources */,
@@ -247,13 +274,18 @@
 				30EBABFA2C77BC1800FA5BD7 /* TextFieldCustomView.swift in Sources */,
 				30C928622C75156400FF5871 /* MainView.swift in Sources */,
 				30EBABE92C779E8500FA5BD7 /* TrainingsCell.swift in Sources */,
+				30E1B2012C78FCFC00557A25 /* GoalView.swift in Sources */,
+				30E1B2072C7906D900557A25 /* OneMoreButton.swift in Sources */,
+				30E1B2032C78FD1100557A25 /* GoalViewModal.swift in Sources */,
 				30EBABE62C779DB300FA5BD7 /* BlueButtonView.swift in Sources */,
+				30E1B2052C7904FD00557A25 /* GoalCellView.swift in Sources */,
 				30EBABFC2C77C2DE00FA5BD7 /* TrainingForWorkoutCellView.swift in Sources */,
 				30EBABFE2C77C56600FA5BD7 /* AddNewTrainingView.swift in Sources */,
 				30C9284C2C75153700FF5871 /* AppDelegate.swift in Sources */,
 				30EBABF82C77B30900FA5BD7 /* WorkoutCellView.swift in Sources */,
 				30EBABF62C77B15900FA5BD7 /* AddworkoutView.swift in Sources */,
 				30EBABED2C77A40C00FA5BD7 /* SoFit.xcdatamodeld in Sources */,
+				30E1B20B2C790AC200557A25 /* ComletedGoalView.swift in Sources */,
 				30EBABE42C7790A800FA5BD7 /* MainViewModel.swift in Sources */,
 				30EBABEF2C77A59800FA5BD7 /* CoreDataManager.swift in Sources */,
 				30C9284E2C75153700FF5871 /* SceneDelegate.swift in Sources */,
