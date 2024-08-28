@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		30AFCE542C7F4B2C008A0516 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AFCE532C7F4B2C008A0516 /* SettingsView.swift */; };
+		30AFCE562C7F4D03008A0516 /* SettingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AFCE552C7F4D03008A0516 /* SettingButton.swift */; };
+		30AFCE5A2C7F4D64008A0516 /* webViewBack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AFCE572C7F4D64008A0516 /* webViewBack.swift */; };
+		30AFCE5B2C7F4D64008A0516 /* WebViewPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AFCE582C7F4D64008A0516 /* WebViewPage.swift */; };
+		30AFCE5C2C7F4D64008A0516 /* webView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30AFCE592C7F4D64008A0516 /* webView.swift */; };
 		30C9284C2C75153700FF5871 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C9284B2C75153700FF5871 /* AppDelegate.swift */; };
 		30C9284E2C75153700FF5871 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C9284D2C75153700FF5871 /* SceneDelegate.swift */; };
 		30C928502C75153700FF5871 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C9284F2C75153700FF5871 /* ViewController.swift */; };
@@ -37,6 +42,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		30AFCE532C7F4B2C008A0516 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		30AFCE552C7F4D03008A0516 /* SettingButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingButton.swift; sourceTree = "<group>"; };
+		30AFCE572C7F4D64008A0516 /* webViewBack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = webViewBack.swift; sourceTree = "<group>"; };
+		30AFCE582C7F4D64008A0516 /* WebViewPage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewPage.swift; sourceTree = "<group>"; };
+		30AFCE592C7F4D64008A0516 /* webView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = webView.swift; sourceTree = "<group>"; };
 		30C928482C75153700FF5871 /* SoFit Sport.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SoFit Sport.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		30C9284B2C75153700FF5871 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		30C9284D2C75153700FF5871 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -79,6 +89,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		30AFCE522C7F4B15008A0516 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				30AFCE592C7F4D64008A0516 /* webView.swift */,
+				30AFCE572C7F4D64008A0516 /* webViewBack.swift */,
+				30AFCE582C7F4D64008A0516 /* WebViewPage.swift */,
+				30AFCE532C7F4B2C008A0516 /* SettingsView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
 		30C9283F2C75153700FF5871 = {
 			isa = PBXGroup;
 			children = (
@@ -117,6 +138,7 @@
 		30C9285F2C75155200FF5871 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				30AFCE522C7F4B15008A0516 /* Settings */,
 				30E1B1FF2C78FCEC00557A25 /* Goal */,
 				30EBABF22C77AE6200FA5BD7 /* Workouts */,
 				30C928602C75155900FF5871 /* Main */,
@@ -140,6 +162,7 @@
 				30EBABF92C77BC1800FA5BD7 /* TextFieldCustomView.swift */,
 				30EBABFF2C77C62E00FA5BD7 /* TrainingTextFieldView.swift */,
 				30E1B2062C7906D900557A25 /* OneMoreButton.swift */,
+				30AFCE552C7F4D03008A0516 /* SettingButton.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -267,8 +290,10 @@
 			files = (
 				30C928502C75153700FF5871 /* ViewController.swift in Sources */,
 				30E1B2092C79089D00557A25 /* NewGoalView.swift in Sources */,
+				30AFCE5B2C7F4D64008A0516 /* WebViewPage.swift in Sources */,
 				30EBABF12C77AA2800FA5BD7 /* WorkoutsViewModel.swift in Sources */,
 				30EBABF42C77AE7800FA5BD7 /* WorkoutsView.swift in Sources */,
+				30AFCE562C7F4D03008A0516 /* SettingButton.swift in Sources */,
 				30C928652C75177400FF5871 /* ProgressCircleView.swift in Sources */,
 				30EBAC002C77C62E00FA5BD7 /* TrainingTextFieldView.swift in Sources */,
 				30EBABFA2C77BC1800FA5BD7 /* TextFieldCustomView.swift in Sources */,
@@ -277,12 +302,15 @@
 				30E1B2012C78FCFC00557A25 /* GoalView.swift in Sources */,
 				30E1B2072C7906D900557A25 /* OneMoreButton.swift in Sources */,
 				30E1B2032C78FD1100557A25 /* GoalViewModal.swift in Sources */,
+				30AFCE5C2C7F4D64008A0516 /* webView.swift in Sources */,
 				30EBABE62C779DB300FA5BD7 /* BlueButtonView.swift in Sources */,
 				30E1B2052C7904FD00557A25 /* GoalCellView.swift in Sources */,
 				30EBABFC2C77C2DE00FA5BD7 /* TrainingForWorkoutCellView.swift in Sources */,
+				30AFCE542C7F4B2C008A0516 /* SettingsView.swift in Sources */,
 				30EBABFE2C77C56600FA5BD7 /* AddNewTrainingView.swift in Sources */,
 				30C9284C2C75153700FF5871 /* AppDelegate.swift in Sources */,
 				30EBABF82C77B30900FA5BD7 /* WorkoutCellView.swift in Sources */,
+				30AFCE5A2C7F4D64008A0516 /* webViewBack.swift in Sources */,
 				30EBABF62C77B15900FA5BD7 /* AddworkoutView.swift in Sources */,
 				30EBABED2C77A40C00FA5BD7 /* SoFit.xcdatamodeld in Sources */,
 				30E1B20B2C790AC200557A25 /* ComletedGoalView.swift in Sources */,

@@ -28,10 +28,16 @@ struct MainView: View {
                             .offset(x: 15)
                         Spacer()
                         //MARK: - Settings button
-                        Image(systemName: "gearshape.fill")
-                            .resizable()
-                            .frame(width: 24, height: 24)
-                            .foregroundStyle(.gray)
+                        NavigationLink {
+                            SettingsView()
+                        } label: {
+                            Image(systemName: "gearshape.fill")
+                                .resizable()
+                                .frame(width: 24, height: 24)
+                                .foregroundStyle(.gray)
+                        }
+
+                        
                     }
                     
                     Spacer()
@@ -73,7 +79,7 @@ struct MainView: View {
                         }
                     }
                     .padding(.vertical)
-                     BlueButtonView(text: "Statistics")
+                     
                 }.padding()
             }
         }

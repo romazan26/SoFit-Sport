@@ -13,6 +13,10 @@ struct NewGoalView: View {
     var body: some View {
         ZStack {
             Color.main.opacity(0.5).ignoresSafeArea()
+                .onTapGesture {
+                    vm.isPresentAddGoal = false
+                    vm.clear()
+                }
             ZStack {
                 Color.second.cornerRadius(24)
                 VStack {
